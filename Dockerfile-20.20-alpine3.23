@@ -1,7 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM 20-alpine AS rootfs-stage
-
+FROM node:20-alpine AS rootfs-stage
 ARG S6_OVERLAY_VERSION="3.2.1.0"
 ARG ROOTFS=/root-out
 ARG REL=v3.22
